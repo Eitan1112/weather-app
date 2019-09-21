@@ -15,7 +15,7 @@ weatherForm.addEventListener('submit', (e) => {
                 msgOne.textContent = data.error
             } else {
                 msgOne.textContent = data.location + '.'
-                msgTwo.textContent = data.summary + ' It is ' + data.temperature + ' degrees out, and there is ' + data.rain + '% chance for rain.' 
+                msgTwo.textContent = data.summary + ' It is ' + data.temperature + ' degrees out, and there is ' + data.rain + '% chance for rain. The humitidy throughout the day is ' + (data.humidity * 100) + '%.' 
             }
         })
     })      
